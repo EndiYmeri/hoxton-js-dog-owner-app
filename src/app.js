@@ -22,6 +22,9 @@ function isDogNaughty(dog) {
     const dogGoodBtnEl = document.createElement('button')
 
     let dogNaughty = !dog.isGoodDog
+
+    console.log(dog.isGoodDog)
+
     let dogNaughtyText = ""
     let dogNaughtyTextButton = ""
 
@@ -42,7 +45,7 @@ function isDogNaughty(dog) {
     changeDogBehaviour(dogNaughty)
 
     dogGoodBtnEl.addEventListener("click", () => {
-        dog.isDogGood = !dog.isDogGood
+        dog.isGoodDog = !dog.isGoodDog
         dogNaughty = !dogNaughty
 
         changeDogBehaviour(dogNaughty)
